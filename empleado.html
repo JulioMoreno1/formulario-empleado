@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Empleado</title>
+  <body>
+    <h1>Datos del empleado</h1>
+    <form>
+    <!-- Esta bloque solicita los datos personales del empleado -->
+      <fieldset>
+        <legend>Personales</legend>
+        <label for="nombre">Nombre(s): <input type="text" id="nombres" name="nombres"></label>
+        <label for="apellido1">Apellido Paterno: <input type="text" id="apellido1" name="apellido1"></label>
+        <label for="apellido2">Apellido Materno: <input type="text" id="apellido2" name="apellido2"></label>
+        <label for="curp">CURP: <input type="text" id="curp"/></label>
+        <label for="nacimiento">Fecha de Nacimiento: <input type="date" id="nacimiento" name="nacimiento"></label>
+        <label>Genero: 
+          <select id="genero" name="genero">
+            <option value="">(Seleccione uno)</option>
+          	<option value="1">Femenino</option>
+          	<option value="2">Masculino</option>
+          	<option value="3">No binario</option>
+          </select>
+        </label>
+      </fieldset>
+      <!-- Este bloque solicita los datos empresariales del empleado -->
+      <fieldset>
+      	<legend>Empresariales</legend>
+      	<label>Empresa contratadora: 
+      		<select>
+      		<!-- Aquí se tiene que agregar las empresas -->
+      		  <option value="">(Seleccione una empresa)</option>
+      		  <option value="1">Empresa número 1</option>
+      		  <option value="2">Empresa número 2</option>
+      		  <option value="3">Empresa número 3</option>
+      		  <option value="4">Empresa número 4</option>
+      		  <option value="5">Empresa número 5</option>
+      		</select>
+      	</label>
+      	<label>Sucursal: 
+      	  <select>
+      	  <!-- Aquí se tiene que agregar las sucursales -->
+      	   <option value="">(Seleccione una sucursal)</option>
+      	   <option value="1">Surcursal número 1</option>
+      	   <option value="2">Surcursal número 2</option>
+      	   <option value="3">Surcursal número 3</option>
+      	   <option value="4">Surcursal número 4</option>
+      	   <option value="5">Surcursal número 5</option>
+      	  </select>
+      	</label>
+      	<label>Área: 
+      	  <select>
+      	  <!-- Aquí se tiene que agregar las áreas de trabajo -->
+      	    <option value="">(Seleccione un área)</option>
+      	    <option value="1">Área número 1</option>
+      	    <option value="2">Área número 2</option>
+      	    <option value="3">Área número 3</option>
+      	    <option value="4">Área número 4</option>
+      	    <option value="5">Área número 5</option>
+      	  </select>
+      	</label>
+      	<label>Puesto: 
+      	  <select>
+      	  <!-- Aquí se tiene que agregar los puestos -->
+      	    <option value="">(Seleccione un puesto)</option>
+      	    <option value="1">Puesto número 1</option>
+      	    <option value="2">Puesto número 2</option>
+      	    <option value="3">Puesto número 3</option>
+      	    <option value="4">Puesto número 4</option>
+      	    <option value="5">Puesto número 5</option>
+      	  </select>
+      	</label>
+      	<label>Fecha de ingreso: <input type="date" id="ingreso" name="ingreso" /></label>
+      	<label>RFC: <input type="text" id="rfc" name="rfc"/></label>
+      	<label>NSS (Número de Seguridad Social): <input type="text" id="nss" name="nss"/></label>
+      </fieldset>
+      <input type="submit" value="Registrar"/>
+      <input type="submit" value="Limpiar">
+    </form>
+  </body>
+</html>
